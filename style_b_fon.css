@@ -1,0 +1,94 @@
+/* Обнуление */
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-family: sans-serif;
+	font-size: 14px;
+}
+/* Меню навигации сайта*/
+.dws-menu {
+	font-family: 'JetBrains Mono', monospace;
+	width:75%;
+	margin: 0 auto;
+	color: #000;
+}
+/*  */
+.dws-menu:before{
+	content: '';
+	display: block;
+	height: 150px;
+	width: 100%;
+	background: #eee;
+	position: absolute;
+	left: 0;
+	z-index: -1;
+}
+/* Высота для списка элементов меню. Без этого схлопывается после стиля float:left */
+.dws-menu ul{
+	height: 50px;
+}
+/* Элементы меню навигации */
+.dws-menu ul li{
+	float: left;
+	list-style-type: none;
+}
+
+/* Ссылочные элементы меню навигации */
+.dws-menu ul li a{
+	text-decoration: none;
+	font-size: 1.5em;
+	color: #000;
+	display: block;
+	height: 50px;
+	padding: 0 30px;
+	/* Положение строки должно быть равно высоте блока */
+	line-height: 50px ;
+}
+.dws-menu ul li a:hover{
+	color: #d34d43;
+	background:#ccc;
+	transition: all 0.3s ease;
+	box-shadow: 0 5px 7px -5px black;
+}
+
+/* Шапка сайта */
+header{
+	width: 100%;
+    min-height: 350px;
+	background: #aaff2f;
+}
+/* Основной рисунок сайта */
+#root_img{
+	width: 300px;
+	margin: 50px 0;
+}
+/* Блок основного контента документа */
+.main{
+	box-sizing: border-box;
+	width: 60%;
+	margin: 70px auto 50px;
+    display: grid;
+    border:3px solid #ccc;
+    border-radius: 25px;
+    padding: 70px 75px 100px;
+    color: #115;
+}
+/* Заголовок первого уровня документа */
+h1{
+	font-family: 'Della Respira', serif;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+h2{
+	font-family: 'JetBrains Mono', monospace;
+}
+/* Все абзацы в документе */
+p{
+	font-family: sans-serif;
+}
+/* Блоки статей документа */
+.article{
+	margin: 25px 0;
+}
